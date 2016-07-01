@@ -1,4 +1,5 @@
 .eventsStore.provider |= "mongo" | 
+  .authorizationPersister.provider = "mongo" |
   .eventsStore.mongo["exclude-events"] |= ["REFRESH_TOKEN"] | 
   .realm.provider = "mongo" | 
   .user.provider = "mongo" |
